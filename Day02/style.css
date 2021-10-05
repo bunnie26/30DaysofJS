@@ -19,7 +19,7 @@ body{
     border-radius: 50%;
     position: relative;
     transform: translate(-3px);
-    z-index: 1;
+    z-index: 9;
 }
 .miniute,.hour,.second{
     height: 5px;
@@ -29,6 +29,20 @@ body{
     top:50%;
     animation: rotate 60s infinite;
     transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: ease-in-out 0.5s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);   
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
 }
 
 /* @keyframes rotate{
