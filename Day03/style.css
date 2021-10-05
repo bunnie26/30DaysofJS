@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --base:#ffc600;
+    --spacig:10px;
+    --blur:10px;
+}
+body{
+    background-color: aliceblue;
+    height: 100vh;
+    background: linear-gradient(107.8deg, #276F7A 9.88%, #9AD6DF 81.53%), #FFFFFF;
+    box-shadow: 8px 4px 4px rgba(255, 255, 255, 0.25);
+}
+h1{
+    margin:30px auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.row{
+    margin:10px 0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    padding: var(--spacig);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+.hl{
+    color: var(--base);
+}
