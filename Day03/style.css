@@ -1,4 +1,4 @@
-*{
+:root{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,7 @@ body{
     box-shadow: 8px 4px 4px rgba(255, 255, 255, 0.25);
 }
 h1{
-    margin:30px auto;
+    margin:auto;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 0;
@@ -26,11 +26,13 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 img{
     padding: var(--spacig);
     background-color: var(--base);
     filter: blur(var(--blur));
+
 }
 .hl{
     color: var(--base);
